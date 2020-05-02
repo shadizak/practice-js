@@ -21,7 +21,7 @@
 
 function userOrder(){
   var userOrder = prompt('What would you like to order? hotel or house');
-  var item;
+  var item = '';
 
   while(userOrder !== 'hotel' && userOrder !== 'house' ){
     userOrder = prompt('What would you like to order? hotel or house');
@@ -30,11 +30,11 @@ function userOrder(){
   var itemNum = prompt('haw many item do you want to print');
   for(var i = 0; i< itemNum;i++){
     if(userOrder === 'hotel'){
-      if (i == 0 ){item = '<img src="images/hotel.png" >';}
+       
       item = item + '<img src="images/hotel.png" >';
 
     }else if(userOrder === 'house'){
-      if (i == 0 ){item = '<img src="images/house.png" >';}
+     
       item = item + '<img src="images/house.png" >';
     }
   }
